@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class ReportDetails extends AppCompatActivity {
 
-    TextView detENam, detDEnc, detFNam, detCNum, detBar, detBir, detAge, detGen, detFLoc, detTAre, detCom, detTyp, detVar, detPAre, detEYie, detAYie, detPDam, detDPla, detEHar, detAHar, detRem, backbtn;
+    TextView detENam, detDEnc, detFNam, detCNum, detBir, detGen, detFLoc, detTAre, detCom, detTyp, detVar, detPAre, detEYie, detAYie, detPDam, detDPla, detEHar, detAHar, detRem, backbtn;
     String key = "";
     Button deletebtn, updatebtn;
     AlertDialog.Builder builder;
@@ -29,9 +29,7 @@ public class ReportDetails extends AppCompatActivity {
         detDEnc = findViewById(R.id.recDEnc);
         detFNam = findViewById(R.id.recFNam);
         detCNum = findViewById(R.id.recCNum);
-        detBar = findViewById(R.id.recBar);
         detBir = findViewById(R.id.recBir);
-        detAge = findViewById(R.id.recAge);
         detGen = findViewById(R.id.recGen);
         detFLoc = findViewById(R.id.recFLoc);
         detTAre = findViewById(R.id.recTAre);
@@ -59,9 +57,7 @@ public class ReportDetails extends AppCompatActivity {
             detDEnc.setText(bundle.getString("datEnc"));
             detFNam.setText(bundle.getString("farNam"));
             detCNum.setText(bundle.getString("conNum"));
-            detBar.setText(bundle.getString("bara"));
             detBir.setText(bundle.getString("birDay"));
-            detAge.setText(bundle.getString("edad"));
             detGen.setText(bundle.getString("genDer"));
             detFLoc.setText(bundle.getString("farLoc"));
             detTAre.setText(bundle.getString("totAre"));
@@ -118,9 +114,7 @@ public class ReportDetails extends AppCompatActivity {
                         .putExtra("datEnc", detDEnc.getText().toString())
                         .putExtra("farNam", detFNam.getText().toString())
                         .putExtra("conNum", detCNum.getText().toString())
-                        .putExtra("bara", detBar.getText().toString())
                         .putExtra("birDay", detBir.getText().toString())
-                        .putExtra("edad", detAge.getText().toString())
                         .putExtra("genDer", detGen.getText().toString())
                         .putExtra("farLoc", detFLoc.getText().toString())
                         .putExtra("totAre", detTAre.getText().toString())

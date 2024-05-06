@@ -29,7 +29,7 @@ import java.util.Calendar;
 import java.util.Locale;
 
 public class addEntry extends AppCompatActivity {
-    EditText encNam, datEnc, farNam, conNum, bara, birDay, edad, genDer, farLoc, totAre, com, typ, vari, plaAre, datPla, expHar, expYie, actHar, actYie, perDam, rem;
+    EditText encNam, datEnc, farNam, conNum, birDay, genDer, farLoc, totAre, com, typ, vari, plaAre, datPla, expHar, expYie, actHar, actYie, perDam, rem;
     Button create;
     FirebaseDatabase database;
     DatabaseReference reference;
@@ -45,9 +45,7 @@ public class addEntry extends AppCompatActivity {
         datEnc = findViewById(R.id.dateEncoded);
         farNam = findViewById(R.id.farmerName);
         conNum = findViewById(R.id.contactNumber);
-        bara = findViewById(R.id.barangay);
         birDay = findViewById(R.id.birthday);
-        edad = findViewById(R.id.age);
         genDer = findViewById(R.id.gender);
         farLoc = findViewById(R.id.location);
         totAre = findViewById(R.id.area);
@@ -76,9 +74,7 @@ public class addEntry extends AppCompatActivity {
                 String de = datEnc.getText().toString();
                 String fa = farNam.getText().toString();
                 String cn = conNum.getText().toString();
-                String ba = bara.getText().toString();
                 String bd = birDay.getText().toString();
-                String ag = edad.getText().toString();
                 String gd = genDer.getText().toString();
                 String fl = farLoc.getText().toString();
                 String ta = totAre.getText().toString();
@@ -94,11 +90,11 @@ public class addEntry extends AppCompatActivity {
                 String pd = perDam.getText().toString();
                 String rm = rem.getText().toString();
 
-                if (en.isEmpty() | de.isEmpty() | fa.isEmpty() | cn.isEmpty() | ba.isEmpty() | bd.isEmpty() | ag.isEmpty() | gd.isEmpty() | fl.isEmpty() | ta.isEmpty() | cm.isEmpty() | tp.isEmpty() | vr.isEmpty() | pa.isEmpty() | eh.isEmpty() | ey.isEmpty()) {
+                if (en.isEmpty() | de.isEmpty() | fa.isEmpty() | cn.isEmpty() | bd.isEmpty() | gd.isEmpty() | fl.isEmpty() | ta.isEmpty() | cm.isEmpty() | tp.isEmpty() | vr.isEmpty() | pa.isEmpty() | eh.isEmpty() | ey.isEmpty()) {
                     Toast.makeText(addEntry.this, "Please fill in all pre-harvest fields.", Toast.LENGTH_SHORT).show();
                 }
                 else {
-                    EntryClass entryClass = new EntryClass(en, de, fa, cn, ba, bd, ag, gd, fl, ta, cm, tp, vr, pa, dp, eh, ey, ah, ay, pd, rm);
+                    EntryClass entryClass = new EntryClass(en, de, fa, cn, bd, gd, fl, ta, cm, tp, vr, pa, dp, eh, ey, ah, ay, pd, rm);
 
                     reference.child(de).setValue(entryClass).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

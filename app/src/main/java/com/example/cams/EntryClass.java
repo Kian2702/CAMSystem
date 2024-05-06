@@ -1,18 +1,16 @@
 package com.example.cams;
 
 public class EntryClass{
-    String encNam, datEnc, farNam, conNum, bara, birDay, edad, genDer, farLoc, totAre, com, typ, vari, plaAre, datPla, expHar, expYie, actHar, actYie, perDam, rem, key;
+    String encNam, datEnc, farNam, conNum, birDay, genDer, farLoc, totAre, com, typ, vari, plaAre, datPla, expHar, expYie, actHar, actYie, perDam, rem, key;
     public EntryClass(){
     }
 
-    public EntryClass(String encNam, String datEnc, String farNam, String conNum, String bara, String birDay, String edad, String genDer, String farLoc, String totAre, String com, String typ, String vari, String plaAre, String datPla, String expHar, String expYie, String actHar, String actYie, String perDam, String rem) {
+    public EntryClass(String encNam, String datEnc, String farNam, String conNum, String birDay, String genDer, String farLoc, String totAre, String com, String typ, String vari, String plaAre, String datPla, String expHar, String expYie, String actHar, String actYie, String perDam, String rem) {
         this.encNam = encNam;
         this.datEnc = datEnc;
         this.farNam = farNam;
         this.conNum = conNum;
-        this.bara = bara;
         this.birDay = birDay;
-        this.edad = edad;
         this.genDer = genDer;
         this.farLoc = farLoc;
         this.totAre = totAre;
@@ -45,16 +43,8 @@ public class EntryClass{
         return conNum;
     }
 
-    public String getBara() {
-        return bara;
-    }
-
     public String getBirDay() {
         return birDay;
-    }
-
-    public String getEdad() {
-        return edad;
     }
 
     public String getGenDer() {
@@ -129,16 +119,8 @@ public class EntryClass{
         this.conNum = conNum;
     }
 
-    public void setBara(String bara) {
-        this.bara = bara;
-    }
-
     public void setBirDay(String birDay) {
         this.birDay = birDay;
-    }
-
-    public void setEdad(String edad) {
-        this.edad = edad;
     }
 
     public void setGenDer(String genDer) {

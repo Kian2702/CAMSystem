@@ -21,8 +21,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 
 public class updateEntry extends AppCompatActivity {
-    EditText encNam, datEnc, farNam, conNum, bara, birDay, edad, genDer, farLoc, totAre, com, typ, vari, plaAre, datPla, expHar, expYie, actHar, actYie, perDam, rem;
-    String en, de, fn, cn, bg, bd, ed, gd, fl, ta, cm, ty, vr, pa, dp, eh, ey, ah, ay, pd, rm;
+    EditText encNam, datEnc, farNam, conNum, birDay, genDer, farLoc, totAre, com, typ, vari, plaAre, datPla, expHar, expYie, actHar, actYie, perDam, rem;
+    String en, de, fn, cn, bd, gd, fl, ta, cm, ty, vr, pa, dp, eh, ey, ah, ay, pd, rm;
     Button update;
     FirebaseDatabase database;
     DatabaseReference reference;
@@ -41,9 +41,7 @@ public class updateEntry extends AppCompatActivity {
         datEnc = findViewById(R.id.dateEncoded);
         farNam = findViewById(R.id.farmerName);
         conNum = findViewById(R.id.contactNumber);
-        bara = findViewById(R.id.barangay);
         birDay  = findViewById(R.id.birthday);
-        edad = findViewById(R.id.age);
         genDer = findViewById(R.id.gender);
         farLoc = findViewById(R.id.location);
         totAre = findViewById(R.id.area);
@@ -66,9 +64,7 @@ public class updateEntry extends AppCompatActivity {
             datEnc.setText(bundle.getString("datEnc"));
             farNam.setText(bundle.getString("farNam"));
             conNum.setText(bundle.getString("conNum"));
-            bara.setText(bundle.getString("bara"));
             birDay.setText(bundle.getString("birDay"));
-            edad.setText(bundle.getString("edad"));
             genDer.setText(bundle.getString("genDer"));
             farLoc.setText(bundle.getString("farLoc"));
             totAre.setText(bundle.getString("totAre"));
@@ -101,9 +97,7 @@ public class updateEntry extends AppCompatActivity {
         de = datEnc.getText().toString();
         fn = farNam.getText().toString();
         cn = conNum.getText().toString();
-        bg = bara.getText().toString();
         bd = birDay.getText().toString();
-        ed = edad.getText().toString();
         gd = genDer.getText().toString();
         fl = farLoc.getText().toString();
         ta = totAre.getText().toString();
@@ -124,9 +118,7 @@ public class updateEntry extends AppCompatActivity {
         entryClass.put("datEnc", de);
         entryClass.put("farNam", fn);
         entryClass.put("conNum", cn);
-        entryClass.put("bara", bg);
         entryClass.put("birDay", bd);
-        entryClass.put("edad", ed);
         entryClass.put("genDer", gd);
         entryClass.put("farLoc", fl);
         entryClass.put("totAre", ta);
