@@ -146,7 +146,8 @@
                 android:hint="@string/mm_dd_yy"
                 android:layout_marginTop="10dp"
                 android:textSize="16sp"
-                android:inputType="date">
+                android:inputType="date"
+                android:maxLength="8">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -353,7 +354,8 @@
                 android:hint="@string/mm_dd_yy"
                 android:layout_marginTop="10dp"
                 android:inputType="date"
-                android:textSize="16sp">
+                android:textSize="16sp"
+                android:maxLength="8">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -378,7 +380,8 @@
                 android:hint="@string/mm_dd_yy"
                 android:inputType="date"
                 android:textSize="16sp"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:maxLength="8">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -470,9 +473,10 @@
                 android:background="@drawable/edittext"
                 android:padding="16sp"
                 android:inputType="number"
-                android:hint="@string/enter_here"
+                android:hint="@string/mm_dd_yy"
                 android:textSize="16sp"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="10dp"
+                android:maxLength="8">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
