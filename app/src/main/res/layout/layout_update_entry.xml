@@ -225,7 +225,7 @@
                 android:hint="@string/enter_here"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
-                android:inputType="number">
+                android:inputType="numberDecimal">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -329,7 +329,7 @@
                 android:hint="@string/enter_here"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
-                android:inputType="number">
+                android:inputType="numberDecimal">
 
             </com.google.android.material.textfield.TextInputEditText>
         </com.google.android.material.textfield.TextInputLayout>
@@ -405,7 +405,7 @@
                 android:background="@drawable/edittext"
                 android:padding="16sp"
                 android:hint="@string/enter_here"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp" >
 
@@ -473,7 +473,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/edittext"
                 android:padding="16sp"
-                android:inputType="number"
+                android:inputType="numberDecimal"
                 android:hint="@string/enter_here"
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
